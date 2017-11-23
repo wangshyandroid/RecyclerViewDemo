@@ -67,9 +67,6 @@ public class MainActivity extends AppCompatActivity {
         iamgeList.add(new ImageItme(0x000001, "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511347992893&di=4c4d5e4c2409db0d8126c597196a2603&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fb58f8c5494eef01f1ab847f8ebfe9925bc317d5a.jpg"));
         iamgeList.add(new ImageItme(0x000001, "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511348069129&di=97b52b4c08d53939ff7a5ce08572ceb5&imgtype=0&src=http%3A%2F%2Fpic22.nipic.com%2F20120801%2F10643934_164833498196_2.jpg"));
         iamgeList.add(new ImageItme(0x000001, "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511348124303&di=7bf4ce516aa98615bdee47f38ac83b91&imgtype=0&src=http%3A%2F%2Fpic28.nipic.com%2F20130422%2F6608733_205145009304_2.jpg"));
-//        iamgeList.add(new ImageItme(1, "http://h.hiphotos.baidu.com/image/pic/item/8326cffc1e178a82063b734efc03738da877e8dd.jpg"));
-//        iamgeList.add(new ImageItme(1, "http://h.hiphotos.baidu.com/image/pic/item/8326cffc1e178a82063b734efc03738da877e8dd.jpg"));
-//        iamgeList.add(new ImageItme(1, "http://h.hiphotos.baidu.com/image/pic/item/8326cffc1e178a82063b734efc03738da877e8dd.jpg"));
         return iamgeList;
     }
 }
