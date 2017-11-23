@@ -5,7 +5,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
@@ -33,17 +32,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = null;
         ViewHolder viewHolder = null;
         if (viewType == TEXT) {
-            view = LayoutInflater.from(mContext).inflate(R.layout.text_itme, parent, false);
-            viewHolder = new ViewHolder(mContext, view);
+            viewHolder = new ViewHolder(mContext, LayoutInflater.from(mContext).inflate(R.layout.text_itme, parent, false));
         } else if (viewType == IMAGE) {
-            view = LayoutInflater.from(mContext).inflate(R.layout.imag_itme, parent, false);
-            viewHolder = new ViewHolder(mContext, view);
+            viewHolder = new ViewHolder(mContext, LayoutInflater.from(mContext).inflate(R.layout.imag_itme, parent, false));
         } else if (viewType == RECYCLERVIEW) {
-            view = LayoutInflater.from(mContext).inflate(R.layout.recyclerview_tiem, parent, false);
-            viewHolder = new ViewHolder(mContext, view);
+            viewHolder = new ViewHolder(mContext, LayoutInflater.from(mContext).inflate(R.layout.recyclerview_tiem, parent, false));
         }
         return viewHolder;
     }
