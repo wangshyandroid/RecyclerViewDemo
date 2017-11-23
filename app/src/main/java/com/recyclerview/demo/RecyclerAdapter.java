@@ -20,10 +20,9 @@ import java.util.List;
  */
 
 public class RecyclerAdapter extends RecyclerView.Adapter<ViewHolder> {
-    private int type = 2;
-    private final static int TEXT = 0;
-    private final static int IMAGE = 1;
-    private final static int RECYCLERVIEW = 2;
+    private final static int TEXT = 0x000000;
+    private final static int IMAGE = 0x000001;
+    private final static int RECYCLERVIEW = 0x000002;
     private Context mContext;
     private List<BaseItme> mListBean;
 
@@ -97,7 +96,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<ViewHolder> {
 
         @Override
         public void onBindViewHolder(ViewHolder holder, int position) {
-            ImageItme imageItme = (ImageItme) items.get(position);
+            ImageItme imageItme = items.get(position);
             Glide.with(mContext)
                     .load(imageItme.getImageUrl())
                     .crossFade()
